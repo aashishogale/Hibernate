@@ -17,7 +17,7 @@ public class SelectClass {
 			do {
 				System.out.println("enter choice");
 				System.out.println("1.insertdoctor");
-				System.out.println("2.insertpatient");
+
 				System.out.println("3.display");
 				System.out.println("4.update");
 				System.out.println("5.delete");
@@ -28,17 +28,15 @@ public class SelectClass {
 				
 					doctorDao.insertDoctor();
 					break;
+		
 				case 2:
-					doctorDao.insertPatient();
-					break;
-				case 3:
 					
 					doctorDao.display();
 					break;
-				case 4:
+				case 3:
 					doctorDao.update();
 					break;
-				case 5:
+				case 4:
 					doctorDao.delete();
 					break;
 				default:

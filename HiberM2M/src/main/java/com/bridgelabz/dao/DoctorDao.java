@@ -10,8 +10,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 
-import com.bridelabz.model.Doctor;
-import com.bridelabz.model.Patient;
+import com.bridgelabz.model.Doctor;
+import com.bridgelabz.model.Patient;
 
 
 

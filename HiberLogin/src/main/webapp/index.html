@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create your Google Account</title>
+<script type="text/javascript" src="login.js"></script>
+<style>
+input[type="button"] {
+	margin-left: 93%;
+	margin-top: 4.0%;
+	background-color: DodgerBlue;
+	height: 30px;
+	width: 70px;
+	border-radius: 5px;
+	color: white;
+}
+
+img.google {
+	position: absolute;
+	height: 40px;
+	width: 120px;
+	margin-top: 1.0%;
+	margin-left: 2.5%;
+}
+
+div.box {
+	position: absolute;
+	margin-top: 2.0%;
+	width: 100%;
+	height: 900px;
+	background-color: white;
+	box-shadow: 1px 1px 5px #888888;
+}
+
+p.title {
+	text-align: center;
+	color: #59595b;
+	font-size: 200%;
+}
+
+div.container {
+	position: absolute;
+	margin-left: 60%;
+	width: 100px;
+	height: 700px;
+	background-color: #e3e5e8;
+	box-shadow: 1px 1px 0px #888888;
+	width: 450px;
+}
+
+input[type="text"] {
+	margin-left: 3%;
+	display: inline-block;
+	width: 40%;
+	background: "transparent";
+	display: "inline-block";
+	border-width: 0px;
+}
+
+input[type="password"] {
+	margin-left: 3%;
+	display: inline-block;
+	width: 40%;
+	background: "transparent";
+	display: "inline-block";
+	border-width: 0px;
+}
+
+input[type="email"] {
+	margin-left: 3%;
+	width: 80%;
+}
+
+input[type="submit"] {
+	margin-left: 82%;
+	margin-top: 20%;
+	width: 10%;
+	background-color: DodgerBlue;
+	height: 30px;
+	width: 70px;
+	color: white;
+}
+
+p.heading {
+	margin-left: 3%;
+	font-size: 80%;
+}
+
+span.atgmail {
+	margin-top: 5px;
+	position: absolute;
+	right: 70px;
+	color: #999;
+	direction: ltr;
+	position: absolute;
+}
+
+input[type=date] {
+	margin-left: 3%;
+	width: 160px;
+}
+
+input[type=text].year {
+	width: 40px;
+}
+
+div.space {
+	margin-left: 3%;
+}
+
+input[type=button].button {
+	margin-left: 80%;
+	width: 80px;
+	height: 30px;
+}
+
+</style>
+</head>
+
+<body background="backgroundimage.jpg">
+	<form onsubmit="return checkvalid()" action="RegisterServlet">
+		<img src="index.png" alt="google" class="google"> <input
+			type="button" value="Sign in">
+		<div class="box">
+			<p class="title">Create your Google Account
+			<p>
+			<div class="container">
+				<div class="name">
+					<p class="heading">Name</p>
+					<input type="text" placeholder="First" id="fname" name="fname">
+					<input type="text" placeholder="Last" id="lname">
+					<p id="pname"></p>
+
+				</div>
+				<div class="email">
+					<p class="heading">Choose your username</p>
+					<input type="email" id="email" name="email"> <span
+						class="atgmail">@gmail.com</span>
+					<p id="pemail"></p>
+				</div>
+
+				<div>
+					<p class="heading">Create a password</p>
+					<input type="password" id="psw" name="pass">
+					<p id="ppass"></p>
+				</div>
+				<div>
+					<p class="heading">Confirm your password</p>
+					<input type="password" id="psw-repeat">
+					<p id="prpass"></p>
+				</div>
+				<div>
+					<p class="heading">Birthday</p>
+					<input type="date" placeholder="day" class="day" id="day" >
+					<p id="pday"></p>
+
+				</div>
+				<p class="heading">Gender</p>
+				<div class="space">
+					<select name="gender">
+						<option value="gender"></option>
+						<option value="Female">Female</option>
+						<option value="Male">Male</option>
+						<option value="Others">Others</option>
+					</select>
+				</div>
+				<div>
+					<p class="heading">Mobile Phone</p>
+					<input type="text" maxlength="10" name="mobile" id="mobile">
+					<p id="pmobile"></p>
+				</div>
+				<div>
+					<p class="heading">Your current email address</p>
+					<input type="text">
+				</div>
+				<div Class="space">
+					<p class="heading">Location</p>
+					<select name="location">
+						<option value=""></option>
+						<option value="India">India</option>
+						<option value="China">China</option>
+						<option value="Australia">Australia</option>
+						<option value="USA">USA</option>
+						<option value="Germany">Germany</option>
+						<option value="Hong-Kong">Hong-Kong</option>
+						<option value="Uk">UK</option>
+					</select>
+				</div>
+				<div>
+					<input type="submit" value="Enter" class="button">
+				</div>
+			</div>
+		</div>
+	</form>
+
+</body>
+</html>
